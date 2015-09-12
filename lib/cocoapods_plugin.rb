@@ -15,14 +15,14 @@ module Pod
 
     def supported_platform_names
       # if there's no Podfile config do default
-      return tvos_supported_platform_names if validates_for_expert
+      return tvos_supported_platform_names unless validates_for_expert
 
       # Otherwise return all platforms for all pods
       names = PLATFORMS
       names.map { |name| Platform.new(name, deployment_target(name)) }
     end
 
-    def validates_for_keys
+    def validates_for_expert
       podfile = Pod::Config.instance.podfile
       podfile && podfile.plugins && !podfile.plugins['cocoapods-expert-difficulty'].nil?
     end
