@@ -1,11 +1,21 @@
-# cocoapods-expert-difficulty
+# CocoaPods Expert Difficulty
 
-A description of cocoapods-expert-difficulty.
+Is forcing everyone to update to `watchOS` or `tvOS` getting you down? Well now you can say "screw you CocoaPods, I know what I'm doing". Then CocoaPods will allow you to use any pod on any platform.
+
+This can break things. Obviously. So, err, use it for hacking, then do it properly.
 
 ## Installation
 
-    $ gem install cocoapods-expert-difficulty
+Use a Gemfile. [Here's a guide](http://guides.cocoapods.org/using/a-gemfile.html)
 
-## Usage
+Gemfile:
+```
+gem "cocoapods"
+gem "cocoapods-expert-difficulty"
+```
 
-    $ pod spec difficulty POD_NAME
+Podfile:
+```
+plugin "cocoapods-expert-difficulty"
+[...]
+```
