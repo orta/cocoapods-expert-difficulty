@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = CocoapodsExpertDifficulty::VERSION
   spec.authors       = ['Orta Therox']
   spec.email         = ['orta.therox@gmail.com']
-  spec.description   = %q{A short description of cocoapods-expert-difficulty.}
-  spec.summary       = %q{A longer description of cocoapods-expert-difficulty.}
-  spec.homepage      = 'https://github.com/EXAMPLE/cocoapods-expert-difficulty'
+  spec.description   = %q{Ignore platforms in other people's Podspecs.}
+  spec.summary       = %q{Avoid making a lot of PRs adding a single platform to pods.}
+  spec.homepage      = 'https://github.com/orta/cocoapods-expert-difficulty'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
