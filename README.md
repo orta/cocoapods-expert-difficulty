@@ -19,3 +19,5 @@ Podfile:
 plugin "cocoapods-expert-difficulty"
 [...]
 ```
+
+Then use `bundle exec pod install`
